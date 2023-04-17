@@ -6,7 +6,7 @@ import FileNotFound from './FileNotFound'
 const Header = () => {
     return (<>
     <div style={{border: '1px solid black', backgroundColor: 'black', color: 'white', borderRadius: '10px'}}>
-    <a href="/"><img src="imgs/logo.png" width="100px" height="100px" style={{borderRadius: '50px'}} /></a>
+    <a href="/"><img src="https://raw.githubusercontent.com/MushahidAli/GitHubAPI/main/imgs/logo.png" width="100px" height="100px" style={{borderRadius: '50px'}} /></a>
     <h1>Mushahid's GitHub API</h1>
     <BrowserRouter>
     [<Link to="/">Search UserName</Link>] :
