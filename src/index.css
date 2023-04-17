@@ -34,7 +34,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url('imgs/background.jpg');
+  background-image: url('https://raw.githubusercontent.com/MushahidAli/GitHubAPI/main/imgs/background.jpg');
   background-size: cover;
 }
 
