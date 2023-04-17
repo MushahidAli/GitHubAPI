@@ -11,7 +11,7 @@ const Header = () => {
     <BrowserRouter>
     [<Link to="/">Search UserName</Link>] :
     [<Link to="/search">Search Repositories</Link>] :
-    [<a target="_blank" href="https://github.com/MushahidAli/GitHub-API">Source Code Link</a>]
+    [<a target="_blank" href="https://github.com/MushahidAli/GitHubAPI">Source Code Link</a>]
       <Routes>
          <Route path="/" element={<Body />} />
          <Route path="/search" element={<Search />} />
