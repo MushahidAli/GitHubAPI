@@ -15,8 +15,7 @@ const Body = () => {
         document.getElementById('repo').innerHTML = "";
         document.getElementById('link').innerHTML = "";
         var githubid = document.getElementById('github-id').value;
-        if(githubid) {
-            document.getElementById('profile').style.display = 'block';
+        if(githubid) {            
             await axios.get('https://api.github.com/users/'+githubid)
             .then(res => users.push(res))
             .catch(error => 
@@ -25,6 +24,7 @@ const Body = () => {
             await axios.get('https://api.github.com/users/'+githubid+'/repos')
             .then(result => repolist.push(result))
             setTimeout(() => {
+            document.getElementById('profile').style.display = 'block';
             document.getElementById('name').innerHTML = JSON.stringify(users["0"].data.name);
             if(JSON.stringify(users["0"].data.name) == "null") {
                 document.getElementById('name').innerHTML = "No Name found!";
