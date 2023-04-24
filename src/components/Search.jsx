@@ -1,5 +1,10 @@
 import axios from 'axios';
 const Search = () => {
+    document.querySelector('#githubsearch').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      check();
+    }
+   });
     var searchData = [];
     async function check() {
         searchData = [];
