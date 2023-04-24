@@ -1,11 +1,6 @@
 import axios from 'axios'
 
 const Body = () => {
-    document.querySelector('#github-id').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      check();
-    }
-    });
     var users = [];
     var repolist = [];
     async function check() {
