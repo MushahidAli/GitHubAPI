@@ -1,6 +1,7 @@
 import axios from 'axios';
 const Search = () => {
     document.querySelector('#githubsearch').addEventListener('keypress', function (e) {
+    console.log("Enter done!");
     if (e.key === 'Enter') {
       check();
     }
