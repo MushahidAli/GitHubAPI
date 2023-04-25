@@ -7,6 +7,8 @@ const Body = () => {
     if(e.nativeEvent.data === 'Enter') {
     check();
     }
+        console.log(e.code);
+    if(e.code === 'Enter') {check();}
     }
     var users = [];
     var repolist = [];
