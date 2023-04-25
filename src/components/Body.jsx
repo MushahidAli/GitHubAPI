@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const Body = () => {
         function checking(e) {
-            alert('first'+e)
+            alert('first'+e.key)
       if (e.key === 'Enter') {
           alert('second')
         check();
