@@ -1,5 +1,10 @@
 import axios from 'axios';
 const Search = () => {
+    function checking(event){
+		if(event.key === 'Enter'){
+			check();
+	}
+	}
     var searchData = [];
     async function check() {
         searchData = [];
@@ -36,7 +41,7 @@ const Search = () => {
     <br />
     <div style={{color: 'black', border: '1px solid grey', borderRadius: '5px', backgroundColor: '#D3D3D3'}}>
     <br />GitHub Repository:<br /><br />
-        <input style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="githubsearch" type="text" placeholder="RepositoryName" /><br /><br />
+        <input onKeyPress={checking} style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="githubsearch" type="text" placeholder="RepositoryName" /><br /><br />
         <button onClick={check}>Check!</button><br /><br />
         <div style={{display: 'none'}} id="search-container"><fieldset>
         <div id="reporesults"></div>
