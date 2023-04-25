@@ -2,8 +2,8 @@ import axios from 'axios'
 
 const Body = () => {
     function checking(e) {
-    alert(e);
-    alert(e.key);
+    console.log(e);
+    console.log(e.key);
     if(e.key === 'Enter') {
     check();
     }
