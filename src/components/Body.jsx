@@ -3,7 +3,7 @@ import axios from 'axios'
 const Body = () => {
 	function checking(event){
 		if(event.key === 'Enter'){
-			alert('The sky is your starting point!')
+			check();
 	}
 	}
     var users = [];
