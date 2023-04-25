@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const Body = () => {
     function checking(e) {
+    console.log(e);
     console.log(e.nativeEvent.data);
     if(e.nativeEvent.data === 'Enter') {
     check();
