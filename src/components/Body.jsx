@@ -62,7 +62,7 @@ const Body = () => {
 
     return(<><div style={{color: 'black', border: '1px solid grey', borderRadius: '5px', backgroundColor: '#D3D3D3'}}>
         <br />GitHub UserName:<br /><br />
-        <input onkeydown={checking(e)} style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="github-id" placeholder="UserName" /><br /><br />
+        <input onChange="checking(e)" style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="github-id" placeholder="UserName" /><br /><br />
         <button onClick={check}>Check!</button><br /><br />
         <div id="profile" style={{display: 'none'}}><h4>Profile</h4>
         Name: <span id="name"></span><br />
