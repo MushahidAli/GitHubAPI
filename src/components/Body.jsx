@@ -1,7 +1,13 @@
 import axios from 'axios'
 
 const Body = () => {
-    function checking(e) { alert('first'+e.key) if (e.key === 'Enter') { alert('second') check()}}
+    function checking(e) { 
+        alert('first'+e.key) 
+        if (e.key === 'Enter') { 
+            alert('second') 
+            check();
+        }
+    }
     var users = [];
     var repolist = [];
     async function check() {
