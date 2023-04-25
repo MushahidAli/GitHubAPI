@@ -1,15 +1,10 @@
 import axios from 'axios'
 
 const Body = () => {
-    function checking(e) {
-    console.log(e);
-    console.log(e.nativeEvent.data);
-    if(e.nativeEvent.data === 'Enter') {
-    check();
-    }
-        console.log(e.code);
-    if(e.code === 'Enter') {check();}
-    }
+	checking(event){
+		if(event.key === 'Enter'){
+			alert('The sky is your starting point!')
+	}
     var users = [];
     var repolist = [];
     async function check() {
@@ -64,7 +59,7 @@ const Body = () => {
 
     return(<><div style={{color: 'black', border: '1px solid grey', borderRadius: '5px', backgroundColor: '#D3D3D3'}}>
         <br />GitHub UserName:<br /><br />
-        <input onKeyDown={checking} style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="github-id" placeholder="UserName" /><br /><br />
+        <input onKeyPress={checking} style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="github-id" placeholder="UserName" /><br /><br />
         <button onClick={check}>Check!</button><br /><br />
         <div id="profile" style={{display: 'none'}}><h4>Profile</h4>
         Name: <span id="name"></span><br />
