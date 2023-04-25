@@ -1,13 +1,13 @@
 import axios from 'axios'
 
 const Body = () => {
-    var input = document.getElementById("github-id");
-input.addEventListener("keypress", function(event) {
-  alert("First "+event.key);
-  if (event.key === "Enter") {
-    alert("Second "+event.key);
-  }
-});
+    function checking(e) {
+    alert(e);
+    alert(e.key);
+    if(e.key === 'Enter') {
+    check();
+    }
+    }
     var users = [];
     var repolist = [];
     async function check() {
@@ -62,7 +62,7 @@ input.addEventListener("keypress", function(event) {
 
     return(<><div style={{color: 'black', border: '1px solid grey', borderRadius: '5px', backgroundColor: '#D3D3D3'}}>
         <br />GitHub UserName:<br /><br />
-        <input style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="github-id" placeholder="UserName" /><br /><br />
+        <input onkeydown={checking} style={{border: '0', padding: '10px', borderRadius: '5px', borderLeft: '3px solid green', backgroundColor: 'black', color: 'white'}} id="github-id" placeholder="UserName" /><br /><br />
         <button onClick={check}>Check!</button><br /><br />
         <div id="profile" style={{display: 'none'}}><h4>Profile</h4>
         Name: <span id="name"></span><br />
