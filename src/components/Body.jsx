@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const Body = () => {
-	checking(event){
+	function checking(event){
 		if(event.key === 'Enter'){
 			alert('The sky is your starting point!')
 	}
